@@ -1,13 +1,9 @@
-import adidasImg from "@/src/assets/projects/2.png";
-import buenoImg from "@/src/assets/projects/5.png";
-import aldarEasternMangrovbsImg from "@/src/assets/projects/3.jpg";
-import seikoDubaiMallImg from "@/src/assets/projects/6.png";
-import editDEssenceImg from "@/src/assets/projects/8.png";
-import adidasY3Img from "@/src/assets/projects/y3.png";
-import concept1Img from "@/src/assets/projects/1.jpg";
-import concept2Img from "@/src/assets/projects/4.jpg";
-import concept3Img from "@/src/assets/projects/7.jpg";
-import concept4Img from "@/src/assets/projects/9.jpg";
+import adidasImg from "./assets/projects/adidas.png";
+import buenoImg from "./assets/projects/bueno.png";
+import aldarEasternMangrovbsImg from "./assets/projects/pool.png";
+import seikoDubaiMallImg from "./assets/projects/seiko.png";
+import editDEssenceImg from "./assets/projects/spray.png";
+import adidasY3Img from "./assets/projects/y3.png";
 
 
 export interface Project {
@@ -105,7 +101,7 @@ export const PROJECTS: Project[] = [
     startingPrice: "",
     paymentPlan: "",
   }, 
-  {
+{
     id: "concept-chronos",
     title: "CHRONOS COMPLEX",
     subtitle: "AI-Generated Skyscraper Exploration",
@@ -146,7 +142,6 @@ export const PROJECTS: Project[] = [
     paymentPlan: "50/50",
   },
 ];
-
 export const MILESTONES: Milestone[] = [
   {
     id: "m1",
