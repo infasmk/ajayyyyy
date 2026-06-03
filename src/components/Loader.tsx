@@ -1,8 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { motion } from "motion/react";
 
 export default function Loader({ onComplete }: { onComplete: () => void }) {
   const [progress, setProgress] = useState(0);
+  const onCompleteRef = useRef(onComplete);
+
+  // Keep ref updated with latest callback
+  useEffect(() => {
+    onCompleteRef.current = onComplete;
+  }, [onComplete]);
 
   useEffect(() => {
     // Elegant incremental loading progress simulation
@@ -11,7 +17,7 @@ export default function Loader({ onComplete }: { onComplete: () => void }) {
         if (prev >= 100) {
           clearInterval(interval);
           setTimeout(() => {
-            onComplete();
+            onCompleteRef.current();
           }, 600);
           return 100;
         }
@@ -23,7 +29,7 @@ export default function Loader({ onComplete }: { onComplete: () => void }) {
     }, 120);
 
     return () => clearInterval(interval);
-  }, [onComplete]);
+  }, []);
 
   return (
     <div className="fixed inset-0 bg-luxury-black z-50 flex flex-col items-center justify-center select-none overflow-hidden">
