@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
-import brand1 from "../assets/projects/1.jpg";
-import brand2 from "../assets/projects/2.png";
-import brand3 from "../assets/projects/3.jpg";
-import brand4 from "../assets/projects/4.jpg";
-import brand5 from "../assets/projects/5.png";
-import brand6 from "../assets/projects/6.png";
-import brand7 from "../assets/projects/7.jpg";
-import brand8 from "../assets/projects/8.png";
-import brand9 from "../assets/projects/9.jpg";
+import brand1 from "@/src/assets/projects/1.jpg";
+import brand2 from "@/src/assets/projects/2.png";
+import brand3 from "@/src/assets/projects/3.jpg";
+import brand4 from "@/src/assets/projects/4.jpg";
+import brand5 from "@/src/assets/projects/5.png";
+import brand6 from "@/src/assets/projects/6.png";
+import brand7 from "@/src/assets/projects/7.jpg";
+import brand8 from "@/src/assets/projects/8.png";
+import brand9 from "@/src/assets/projects/9.jpg";
 
 import { 
   ArrowLeft, Mail, Globe, GraduationCap, 

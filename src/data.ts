@@ -1,13 +1,13 @@
-import adidasImg from "./assets/projects/2.png";
-import buenoImg from "./assets/projects/5.png";
-import aldarEasternMangrovbsImg from "./assets/projects/3.jpg";
-import seikoDubaiMallImg from "./assets/projects/6.png";
-import editDEssenceImg from "./assets/projects/8.png";
-import adidasY3Img from "./assets/projects/y3.png";
-import concept1Img from "./assets/projects/1.jpg";
-import concept2Img from "./assets/projects/4.jpg";
-import concept3Img from "./assets/projects/7.jpg";
-import concept4Img from "./assets/projects/9.jpg";
+import adidasImg from "@/src/assets/projects/2.png";
+import buenoImg from "@/src/assets/projects/5.png";
+import aldarEasternMangrovbsImg from "@/src/assets/projects/3.jpg";
+import seikoDubaiMallImg from "@/src/assets/projects/6.png";
+import editDEssenceImg from "@/src/assets/projects/8.png";
+import adidasY3Img from "@/src/assets/projects/y3.png";
+import concept1Img from "@/src/assets/projects/1.jpg";
+import concept2Img from "@/src/assets/projects/4.jpg";
+import concept3Img from "@/src/assets/projects/7.jpg";
+import concept4Img from "@/src/assets/projects/9.jpg";
 
 
 export interface Project {
